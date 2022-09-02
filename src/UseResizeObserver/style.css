@@ -1,0 +1,11 @@
+.box {
+	resize: both;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	overflow: auto;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

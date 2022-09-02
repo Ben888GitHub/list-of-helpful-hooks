@@ -12,6 +12,9 @@ import UseToggle from './UseToggle/UseToggle';
 import UseMediaDevices from './UseMediaDevices/UseMediaDevices';
 import UseOnlineStatus from './UseOnlineStatus/UseOnlineStatus';
 import WindowCommunicationHook from './WindowCommunicationHook/WindowCommunicationHook';
+import UseSwipeable from './UseSwipeable/UseSwipeable';
+import UseHotkeys from './UseHotkeys/UseHotkeys';
+import UseResizeObserver from './UseResizeObserver/UseResizeObserver';
 
 function App() {
 	return (
@@ -43,6 +46,13 @@ function App() {
 			<WindowCommunicationHook />
 			<br />
 			<UseOnlineStatus />
+			<br />
+			<UseSwipeable />
+			<br />
+			<UseHotkeys />
+			<br />
+			<UseResizeObserver />
+			<br />
 		</div>
 	);
 }
