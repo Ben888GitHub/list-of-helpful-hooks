@@ -14,7 +14,7 @@ function DebounceEx1() {
 			setDebouncedValue(val);
 			console.log(val);
 		},
-		3000,
+		1000,
 		[val]
 	);
 

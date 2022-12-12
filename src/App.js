@@ -15,6 +15,8 @@ import WindowCommunicationHook from './WindowCommunicationHook/WindowCommunicati
 import UseSwipeable from './UseSwipeable/UseSwipeable';
 import UseHotkeys from './UseHotkeys/UseHotkeys';
 import UseResizeObserver from './UseResizeObserver/UseResizeObserver';
+// import UseGeolocation from './UseGeolocation/UseGeolocation';
+// import UseSearchQuery from './UseSearchQuery/UseSearchQuery';
 
 function App() {
 	return (
