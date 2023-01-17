@@ -7215,7 +7215,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@*", "react-dom@^16.8.0  || ^17.0.0 || ^18.0.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.9", "react-dom@^18.0.0", "react-dom@>=16.0.0", "react-dom@>=16.8", "react-dom@>=16.8.0", "react-dom@>=16.8.1", "react-dom@16.8.0 - 18":
+"react-dom@*", "react-dom@^16.8.0  || ^17.0.0 || ^18.0.0", "react-dom@^16.8.0 || ^17 || ^18", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.9", "react-dom@^18.0.0", "react-dom@>=16.0.0", "react-dom@>=16.8", "react-dom@>=16.8.0", "react-dom@>=16.8.1", "react-dom@16.8.0 - 18":
   "integrity" "sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.0.0.tgz"
   "version" "18.0.0"
@@ -7234,6 +7234,11 @@
   "version" "3.4.7"
   dependencies:
     "hotkeys-js" "3.9.4"
+
+"react-intersection-observer@^9.4.1":
+  "integrity" "sha512-IXpIsPe6BleFOEHKzKh5UjwRUaz/JYS0lT/HPsupWEQou2hDqjhLMStc5zyE3eQVT4Fk3FufM8Fw33qW1uyeiw=="
+  "resolved" "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.4.1.tgz"
+  "version" "9.4.1"
 
 "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -7330,6 +7335,13 @@
   "resolved" "https://registry.npmjs.org/react-universal-interface/-/react-universal-interface-0.6.2.tgz"
   "version" "0.6.2"
 
+"react-use-clipboard@^1.0.9":
+  "integrity" "sha512-OcMzc14usXhqQnAkvzmhCXAbW5WBT2LSgscVh2vKHXZfg72jFsSOsEearqdeC/nUj8YxEfLnziqe7AE7YkWFwA=="
+  "resolved" "https://registry.npmjs.org/react-use-clipboard/-/react-use-clipboard-1.0.9.tgz"
+  "version" "1.0.9"
+  dependencies:
+    "copy-to-clipboard" "^3.3.1"
+
 "react-use-hover@^2.0.0":
   "integrity" "sha512-A2OYaC8OnWCD7ZOGbnUX4nJlwr0VEtu1gMnZ5U4w8BoXkwCvBlACgBiUd0Ay+goTqHGq4OSwq4Gxr2x05TQUFA=="
   "resolved" "https://registry.npmjs.org/react-use-hover/-/react-use-hover-2.0.0.tgz"
@@ -7362,7 +7374,7 @@
   "resolved" "https://registry.npmjs.org/react-window-communication-hook/-/react-window-communication-hook-1.6.0.tgz"
   "version" "1.6.0"
 
-"react@*", "react@^16.7.0-alpha.0", "react@^16.8.0  || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", "react@^16.9", "react@^18.0.0", "react@>= 16", "react@>= 16.8.0", "react@>=16.0.0", "react@>=16.8", "react@>=16.8.0", "react@>=16.8.1", "react@16.8.0 - 18":
+"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.7.0-alpha.0", "react@^16.8.0  || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", "react@^16.9", "react@^18.0.0", "react@>= 16", "react@>= 16.8.0", "react@>=16.0.0", "react@>=16.8", "react@>=16.8.0", "react@>=16.8.1", "react@16.8.0 - 18":
   "integrity" "sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.0.0.tgz"
   "version" "18.0.0"

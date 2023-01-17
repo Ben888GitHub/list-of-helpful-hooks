@@ -15,6 +15,10 @@ import WindowCommunicationHook from './WindowCommunicationHook/WindowCommunicati
 import UseSwipeable from './UseSwipeable/UseSwipeable';
 import UseHotkeys from './UseHotkeys/UseHotkeys';
 import UseResizeObserver from './UseResizeObserver/UseResizeObserver';
+import IntersectionObserver from './IntersectionObserver.js/IntersectionObserver';
+import UseLockScroll from './UseLockScroll/UseLockScroll';
+import UseCopyToClipboard from './UseCopyToClipboard/UseCopyToClipboard';
+import UseMedia from './UseMediaQuery/UseMedia';
 // import UseGeolocation from './UseGeolocation/UseGeolocation';
 // import UseSearchQuery from './UseSearchQuery/UseSearchQuery';
 
@@ -55,6 +59,15 @@ function App() {
 			<br />
 			<UseResizeObserver />
 			<br />
+			<IntersectionObserver />
+			<br />
+			<UseLockScroll />
+			<br />
+			<UseCopyToClipboard />
+			<br />
+			<UseMedia />
+			<br />
+			<UseClickAway />
 		</div>
 	);
 }
