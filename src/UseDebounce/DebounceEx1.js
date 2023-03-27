@@ -6,7 +6,7 @@ function DebounceEx1() {
 	const [val, setVal] = useState('');
 	const [debouncedValue, setDebouncedValue] = useState('');
 
-	console.log(`hey`);
+	// console.log(`hey`);
 
 	const [, cancel] = useDebounce(
 		() => {

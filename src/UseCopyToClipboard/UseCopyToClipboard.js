@@ -8,6 +8,8 @@ const UseCopyToClipboard = () => {
 		successDuration: 1000
 	});
 
+	isCopied && console.log(isCopied, text);
+
 	return (
 		<>
 			<input value={text} onChange={(e) => setText(e.target.value)} />
