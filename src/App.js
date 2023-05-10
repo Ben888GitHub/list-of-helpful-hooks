@@ -19,6 +19,8 @@ import IntersectionObserver from './IntersectionObserver.js/IntersectionObserver
 import UseLockScroll from './UseLockScroll/UseLockScroll';
 import UseCopyToClipboard from './UseCopyToClipboard/UseCopyToClipboard';
 import UseMedia from './UseMediaQuery/UseMedia';
+import LaagTooltip from './LaagTooltip/LaagTooltip';
+
 // import UseGeolocation from './UseGeolocation/UseGeolocation';
 // import UseSearchQuery from './UseSearchQuery/UseSearchQuery';
 
@@ -68,6 +70,11 @@ function App() {
 			<UseMedia />
 			<br />
 			<UseClickAway />
+			<br />
+			<br />
+			<LaagTooltip />
+			<br />
+			<br />
 		</div>
 	);
 }
