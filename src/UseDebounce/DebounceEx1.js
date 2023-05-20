@@ -7,17 +7,6 @@ function DebounceEx1() {
 	const [val, setVal] = useState('');
 	const [debouncedValue, setDebouncedValue] = useState('');
 
-	// console.log(`hey`);
-
-	// const [, cancel] = useDebounce(
-	// 	() => {
-	// 		setState('Typing stopped');
-	// 		setDebouncedValue(val);
-	// 		console.log(val);
-	// 	},
-	// 	1000,
-	// 	[val]
-	// );
 	const handleDebounceChange = useDebouncedCallback(
 		(value) => {
 			setState('Typing stopped');
