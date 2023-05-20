@@ -1,22 +1,24 @@
 import { useState } from 'react';
-import { useDebounce } from 'react-use';
+// import { useDebounce } from 'react-use';
+import { useDebounce } from 'ahooks';
 
 function DebounceEx1() {
 	const [state, setState] = useState('Typing stopped');
 	const [val, setVal] = useState('');
-	const [debouncedValue, setDebouncedValue] = useState('');
+	// const [debouncedValue, setDebouncedValue] = useState('');
+	const debouncedValue = useDebounce(val, { wait: 1000 });
 
 	// console.log(`hey`);
 
-	const [, cancel] = useDebounce(
-		() => {
-			setState('Typing stopped');
-			setDebouncedValue(val);
-			console.log(val);
-		},
-		1000,
-		[val]
-	);
+	// const [, cancel] = useDebounce(
+	// 	() => {
+	// 		setState('Typing stopped');
+	// 		setDebouncedValue(val);
+	// 		console.log(val);
+	// 	},
+	// 	1000,
+	// 	[val]
+	// );
 
 	return (
 		<>
@@ -25,14 +27,13 @@ function DebounceEx1() {
 				value={val}
 				placeholder="Debounced input"
 				onChange={({ currentTarget }) => {
-					setState('Waiting for typing to stop...');
 					setVal(currentTarget.value);
 				}}
 			/>
-			<div>{state}</div>
+			{/* <div>{state}</div> */}
 			<div>
 				Debounced value: {debouncedValue}
-				<button onClick={cancel}>Cancel debounce</button>
+				{/* <button onClick={cancel}>Cancel debounce</button> */}
 			</div>
 		</>
 	);

@@ -1,14 +1,17 @@
-import { useWindowSize } from 'react-use';
+// import { useWindowSize } from 'react-use';
+import { useSize } from 'ahooks';
+import { useRef } from 'react';
 
 function UseWindowSize() {
-	const { width, height } = useWindowSize();
+	const ref = useRef(null);
+	const size = useSize(ref);
 
 	return (
-		<>
-			<h5>width: {width}</h5>
-			<h5>height: {height}</h5>
-			{width < 600 && <>Phone Size</>}
-		</>
+		<div ref={ref}>
+			<h5>width: {size?.width}</h5>
+			<h5>height: {size?.height}</h5>
+			{size?.width < 600 && <>Phone Size</>}
+		</div>
 	);
 }
 

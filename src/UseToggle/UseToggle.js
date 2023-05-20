@@ -1,14 +1,15 @@
-import { useToggle } from 'react-use';
+import { useToggle } from 'ahooks';
 
 function UseToggle() {
-	const [on, toggle] = useToggle(true);
+	// const [on, toggle] = useToggle(true);
+	const [state, { toggle, setLeft, setRight }] = useToggle();
 	// console.log(`toggle render`);
 	return (
 		<div>
-			<div>{on ? 'ON' : 'OFF'}</div>
+			<div>{state ? 'ON' : 'OFF'}</div>
 			<button onClick={toggle}>Toggle</button>
-			<button onClick={() => toggle(true)}>set ON</button>
-			<button onClick={() => toggle(false)}>set OFF</button>
+			<button onClick={setRight}>set ON</button>
+			<button onClick={setLeft}>set OFF</button>
 		</div>
 	);
 }
