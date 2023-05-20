@@ -8,18 +8,6 @@ function DebounceEx1() {
 	// const [debouncedValue, setDebouncedValue] = useState('');
 	const debouncedValue = useDebounce(val, { wait: 1000 });
 
-	// console.log(`hey`);
-
-	// const [, cancel] = useDebounce(
-	// 	() => {
-	// 		setState('Typing stopped');
-	// 		setDebouncedValue(val);
-	// 		console.log(val);
-	// 	},
-	// 	1000,
-	// 	[val]
-	// );
-
 	return (
 		<>
 			<input
