@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useDebounce } from 'react-use';
+import { useDebouncedCallback } from '@react-hookz/web';
 
 function DebounceEx1() {
 	const [state, setState] = useState('Typing stopped');
@@ -8,14 +9,23 @@ function DebounceEx1() {
 
 	// console.log(`hey`);
 
-	const [, cancel] = useDebounce(
-		() => {
+	// const [, cancel] = useDebounce(
+	// 	() => {
+	// 		setState('Typing stopped');
+	// 		setDebouncedValue(val);
+	// 		console.log(val);
+	// 	},
+	// 	1000,
+	// 	[val]
+	// );
+	const handleDebounceChange = useDebouncedCallback(
+		(value) => {
 			setState('Typing stopped');
-			setDebouncedValue(val);
-			console.log(val);
+			setDebouncedValue(value);
 		},
+		[],
 		1000,
-		[val]
+		1000
 	);
 
 	return (
@@ -27,12 +37,13 @@ function DebounceEx1() {
 				onChange={({ currentTarget }) => {
 					setState('Waiting for typing to stop...');
 					setVal(currentTarget.value);
+					handleDebounceChange(currentTarget.value);
 				}}
 			/>
 			<div>{state}</div>
 			<div>
 				Debounced value: {debouncedValue}
-				<button onClick={cancel}>Cancel debounce</button>
+				{/* <button onClick={cancel}>Cancel debounce</button> */}
 			</div>
 		</>
 	);

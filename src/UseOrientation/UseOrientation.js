@@ -1,8 +1,17 @@
-import { useOrientation } from 'react-use';
+import { useScreenOrientation } from '@react-hookz/web';
 
 function UseOrientation() {
-	const state = useOrientation();
-	return <pre>{JSON.stringify(state, null, 2)}</pre>;
+	const orientation = useScreenOrientation();
+	return (
+		<div>
+			<div>
+				Orientation: <code>{orientation}</code>
+			</div>
+			<div>
+				Render time: <code>{new Date().toLocaleString()}</code>
+			</div>
+		</div>
+	);
 }
 
 export default UseOrientation;

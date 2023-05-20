@@ -1,7 +1,7 @@
 import { useMedia } from 'react-use';
-
+import { useMediaQuery } from '@react-hookz/web';
 const UseMedia = () => {
-	const matches = useMedia('(min-width: 900px)');
+	const matches = useMediaQuery('(min-width: 900px)');
 
 	return (
 		<div style={{ color: matches ? 'teal' : 'red' }}>

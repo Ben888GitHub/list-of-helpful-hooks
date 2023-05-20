@@ -1,4 +1,5 @@
-import { useWindowSize } from 'react-use';
+// import { useWindowSize } from 'react-use';
+import { useWindowSize } from '@react-hookz/web';
 
 function UseWindowSize() {
 	const { width, height } = useWindowSize();

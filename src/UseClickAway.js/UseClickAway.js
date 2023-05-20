@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
-import { useClickAway } from 'react-use';
+import { useClickOutside } from '@react-hookz/web';
 
 function UseClickAway() {
 	const ref = useRef(null);
 	const [opened, setOpened] = useState(true);
-	useClickAway(ref, () => {
+	useClickOutside(ref, () => {
 		console.log('OUTSIDE CLICKED');
 		setOpened(false);
 	});
