@@ -20,6 +20,7 @@ import UseLockScroll from './UseLockScroll/UseLockScroll';
 import UseCopyToClipboard from './UseCopyToClipboard/UseCopyToClipboard';
 import UseMedia from './UseMediaQuery/UseMedia';
 import LaagTooltip from './LaagTooltip/LaagTooltip';
+import LaagPopover from './LaagTooltip/LaagPopover';
 
 // import UseGeolocation from './UseGeolocation/UseGeolocation';
 // import UseSearchQuery from './UseSearchQuery/UseSearchQuery';
@@ -45,6 +46,9 @@ function App() {
 			<UseNetworkState />
 			<br />
 			{/* <UsePageLeave /> */}
+			<LaagPopover />
+			<br />
+			<br />
 			<UseCss />
 			<br />
 			<UseToggle />
