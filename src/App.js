@@ -20,6 +20,8 @@ import UseLockScroll from './UseLockScroll/UseLockScroll';
 import UseCopyToClipboard from './UseCopyToClipboard/UseCopyToClipboard';
 import UseMedia from './UseMediaQuery/UseMedia';
 import LaagTooltip from './LaagTooltip/LaagTooltip';
+import UsePrevious from './UsePrevious/UsePrevious';
+import UseIsFirstRender from './UseIsFirstRender/UseIsFirstRender';
 
 // import UseGeolocation from './UseGeolocation/UseGeolocation';
 // import UseSearchQuery from './UseSearchQuery/UseSearchQuery';
@@ -73,6 +75,12 @@ function App() {
 			<br />
 			<br />
 			<LaagTooltip />
+			<br />
+			<br />
+			<UsePrevious />
+			<br />
+			<br />
+			<UseIsFirstRender />
 			<br />
 			<br />
 		</div>

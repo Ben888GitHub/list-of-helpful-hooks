@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useDebounce } from 'react-use';
 import { useDebouncedCallback } from '@react-hookz/web';
 
+// * https://react-hookz.github.io/web/?path=/docs/callback-usedebouncedcallback--example
+
 function DebounceEx1() {
 	const [state, setState] = useState('Typing stopped');
 	const [val, setVal] = useState('');
@@ -13,7 +15,7 @@ function DebounceEx1() {
 			setDebouncedValue(value);
 		},
 		[],
-		1000,
+		800,
 		1000
 	);
 
