@@ -6,7 +6,7 @@ function UseClickAway() {
 	const [opened, setOpened] = useState(true);
 	useClickOutside(ref, () => {
 		console.log('OUTSIDE CLICKED');
-		setOpened(false);
+		opened && setOpened(false);
 	});
 
 	return (

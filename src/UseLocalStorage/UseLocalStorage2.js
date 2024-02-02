@@ -11,10 +11,17 @@ function UseLocalStorage2() {
 	console.log(`rerender`);
 
 	const addTodo = () => {
-		setTodos([
-			...todos,
+		// setTodos([
+		// 	...todos,
+		// 	{
+		// 		id: todos.length + 1,
+		// 		value: inputValue
+		// 	}
+		// ]);
+		setTodos((prevTodos) => [
+			...prevTodos,
 			{
-				id: todos.length + 1,
+				id: prevTodos.length + 1,
 				value: inputValue
 			}
 		]);

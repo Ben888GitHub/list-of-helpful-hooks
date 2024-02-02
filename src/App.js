@@ -52,10 +52,10 @@ function App() {
 			<UseToggle />
 			<br />
 			<UseMediaDevices />
-			<br />
+			{/* <br />
 			<WindowCommunicationHook />
 			<br />
-			<UseOnlineStatus />
+			<UseOnlineStatus /> */}
 			<br />
 			<UseSwipeable />
 			<br />
